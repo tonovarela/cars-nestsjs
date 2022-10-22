@@ -14,7 +14,8 @@ export class CarsService {
     }
 
     public getById(id: number) {
-        return this.cars.find(c => c.id == id);
+        const car =this.cars.find(c => c.id == id);        
+        return car 
     }
 
 }
