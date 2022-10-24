@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { Car } from './interfaces/car.interface';
 import { v4 as uuid } from 'uuid'
-import { CarDTO } from './DTO/cat.dto';
+import { CarDTO } from './DTO/car.dto';
 
 @Injectable()
 export class CarsService {

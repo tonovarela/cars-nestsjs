@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, NotFoundException, Param, ParseUUIDPipe, Patch, Post, UsePipes, ValidationPipe } from '@nestjs/common';
 import { CarsService } from './cars.service';
-import { CarDTO } from './DTO/cat.dto';
+import { CarDTO } from './DTO/car.dto';
 
 @Controller('cars')
 @UsePipes(ValidationPipe)
