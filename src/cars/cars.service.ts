@@ -7,9 +7,9 @@ import { CarDTO } from './DTO/car.dto';
 export class CarsService {
 
     private cars: Car[] = [
-        { id: uuid(), brand: "Toyota", model: "Corola" },
-        { id: uuid(), brand: "Honda", model: "Civic" },
-        { id: uuid(), brand: "Honda", model: "Accord" },
+        // { id: uuid(), brand: "Toyota", model: "Corola" },
+        // { id: uuid(), brand: "Honda", model: "Civic" },
+        // { id: uuid(), brand: "Honda", model: "Accord" },
     ];
 
     public getAll() {
@@ -35,6 +35,10 @@ export class CarsService {
 
     public delete(id: string) {        
         this.cars = this.cars.filter(c => c.id != id);        
+    }
+
+    fillDataWithSeed(cars:Car[]){
+        this.cars = cars;
     }
 
 
